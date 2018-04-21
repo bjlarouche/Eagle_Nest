@@ -1,5 +1,5 @@
 //
-//  AuthController.h
+//  SignUpController.h
 //  BCApp for HackTheHeights
 //
 //  Created on 4/21/18.
@@ -10,7 +10,7 @@
 
 @import Parse;
 
-@interface AuthController : UIViewController
+@interface SignUpController : UIViewController
 
 
 @end

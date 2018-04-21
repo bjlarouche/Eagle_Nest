@@ -25,5 +25,50 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark Helper functions
+// Should be another class... but meh why be DRY
+
+-(void)showAlert:(NSString *)title message:(NSString *)message actionTitle:(NSString *)actionTitle {
+    UIAlertController *alert=[ UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleActionSheet];
+    [self presentViewController:alert animated:YES
+                     completion:nil];
+    UIAlertAction *dismissaction = [UIAlertAction actionWithTitle:actionTitle style:UIAlertActionStyleDestructive handler:nil];
+    [alert addAction:dismissaction];
+}
+
+#pragma mark Parse Login
+
+-(void)processLogin:(NSString *)username withPassword:(NSString *)password {
+    //This gathers the relevant info
+    [PFUser logInWithUsernameInBackground:username password:password
+                                    block:^(PFUser *user, NSError *error) {
+                                        if(user) {
+                                            // Checking out if the email has been verified
+                                            if([[user objectForKey:@"emailVerified"] boolValue]) {
+                                                // Email has been verified
+                                            }
+                                            else {
+                                                // Email has not been verified, logout the user
+                                                [PFUser logOut];
+                                            }
+                                        } else {
+                                            NSString* errorString = [error userInfo][@"error"];
+                                            // An error occurred
+                                        }
+                                    }];
+}
+
+-(IBAction)loginPressed:(id)sender {
+    NSString* username = @"USERNAMEHERE";
+    NSString* password = @"PASSWORDHERE";
+    
+    [self processLogin:username withPassword:password];
+}
+
+#pragma mark Parse SignUp
+
+-(IBAction)signUpPressed:(id)sender {
+   // Segue navigation to  SignUpController
+}
 
 @end

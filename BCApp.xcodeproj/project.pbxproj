@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		49C8F1EEDA8C69EB85D7F454 /* Pods_BCAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F534673506145503A8B16AA8 /* Pods_BCAppTests.framework */; };
 		612C86B4571114AF092BC13B /* Pods_BCAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D7538A2DCD6263D07853C97 /* Pods_BCAppUITests.framework */; };
+		8D804AE5208BB8E900126DDE /* SignUpController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D804AE4208BB8E900126DDE /* SignUpController.m */; };
+		8D804AE8208BBE8500126DDE /* VerificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D804AE6208BBE8500126DDE /* VerificationController.m */; };
 		8DFCD269208B992100FE0019 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFCD268208B992100FE0019 /* AppDelegate.m */; };
 		8DFCD26C208B992100FE0019 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFCD26B208B992100FE0019 /* ViewController.m */; };
 		8DFCD26F208B992100FE0019 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DFCD26D208B992100FE0019 /* Main.storyboard */; };
@@ -46,6 +48,10 @@
 		485430218D7BF4FAEB0D0DE7 /* Pods-BCApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BCApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-BCApp/Pods-BCApp.release.xcconfig"; sourceTree = "<group>"; };
 		6D7538A2DCD6263D07853C97 /* Pods_BCAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BCAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		884A995BB343CA50DCBC4502 /* Pods_BCApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BCApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D804AE3208BB8E900126DDE /* SignUpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpController.h; sourceTree = "<group>"; };
+		8D804AE4208BB8E900126DDE /* SignUpController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpController.m; sourceTree = "<group>"; };
+		8D804AE6208BBE8500126DDE /* VerificationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerificationController.m; sourceTree = "<group>"; };
+		8D804AE7208BBE8500126DDE /* VerificationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerificationController.h; sourceTree = "<group>"; };
 		8DFCD264208B992100FE0019 /* BCApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BCApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DFCD267208B992100FE0019 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8DFCD268208B992100FE0019 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -102,10 +108,14 @@
 		1AF43B8F208BA08B00132D4C /* VC Files */ = {
 			isa = PBXGroup;
 			children = (
-				8DFCD26A208B992100FE0019 /* ViewController.h */,
-				8DFCD26B208B992100FE0019 /* ViewController.m */,
 				8DFCD29D208B9E1000FE0019 /* AuthController.h */,
 				8DFCD29C208B9E1000FE0019 /* AuthController.m */,
+				8D804AE3208BB8E900126DDE /* SignUpController.h */,
+				8D804AE4208BB8E900126DDE /* SignUpController.m */,
+				8D804AE7208BBE8500126DDE /* VerificationController.h */,
+				8D804AE6208BBE8500126DDE /* VerificationController.m */,
+				8DFCD26A208B992100FE0019 /* ViewController.h */,
+				8DFCD26B208B992100FE0019 /* ViewController.m */,
 			);
 			path = "VC Files";
 			sourceTree = "<group>";
@@ -448,6 +458,8 @@
 				8DFCD272208B992100FE0019 /* BCApp.xcdatamodeld in Sources */,
 				8DFCD27A208B992300FE0019 /* main.m in Sources */,
 				8DFCD269208B992100FE0019 /* AppDelegate.m in Sources */,
+				8D804AE5208BB8E900126DDE /* SignUpController.m in Sources */,
+				8D804AE8208BBE8500126DDE /* VerificationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -623,7 +635,10 @@
 				DEVELOPMENT_TEAM = 6JRJ9AVXW3;
 				INFOPLIST_FILE = BCApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.doubletroublestudio.BCApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -639,7 +654,10 @@
 				DEVELOPMENT_TEAM = 6JRJ9AVXW3;
 				INFOPLIST_FILE = BCApp/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.doubletroublestudio.BCApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -654,7 +672,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6JRJ9AVXW3;
 				INFOPLIST_FILE = BCAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.doubletroublestudio.BCAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -670,7 +692,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6JRJ9AVXW3;
 				INFOPLIST_FILE = BCAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.doubletroublestudio.BCAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -685,7 +711,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6JRJ9AVXW3;
 				INFOPLIST_FILE = BCAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.doubletroublestudio.BCAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -700,7 +730,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6JRJ9AVXW3;
 				INFOPLIST_FILE = BCAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.doubletroublestudio.BCAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
