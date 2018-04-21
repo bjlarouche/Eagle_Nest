@@ -12,7 +12,7 @@
 
 @end
 
-@implementation ViewController
+@implementation VerificationController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
