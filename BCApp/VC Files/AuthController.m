@@ -28,6 +28,7 @@
 #pragma mark Helper functions
 // Should be another class... but meh why be DRY
 
+// Present user with UIAlertView
 -(void)showAlert:(NSString *)title message:(NSString *)message actionTitle:(NSString *)actionTitle {
     UIAlertController *alert=[ UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleActionSheet];
     [self presentViewController:alert animated:YES
@@ -46,10 +47,13 @@
                                             // Checking out if the email has been verified
                                             if([[user objectForKey:@"emailVerified"] boolValue]) {
                                                 // Email has been verified
+                                                // Segue to main part of app
                                             }
                                             else {
                                                 // Email has not been verified, logout the user
-                                                [PFUser logOut];
+                                                // [PFUser logOut];
+                                                // Segue to VerificationController
+                                                
                                             }
                                         } else {
                                             NSString* errorString = [error userInfo][@"error"];
@@ -58,6 +62,7 @@
                                     }];
 }
 
+// Trigger Login Sequence
 -(IBAction)loginPressed:(id)sender {
     NSString* username = @"USERNAMEHERE";
     NSString* password = @"PASSWORDHERE";
@@ -67,8 +72,9 @@
 
 #pragma mark Parse SignUp
 
+// Push to SignUpController
 -(IBAction)signUpPressed:(id)sender {
-   // Segue navigation to  SignUpController
+   // Segue navigation to SignUpController
 }
 
 @end

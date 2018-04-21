@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HelperClass.h"
 
 @import Parse;
 
@@ -14,4 +15,3 @@
 
 
 @end
-
