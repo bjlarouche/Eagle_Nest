@@ -11,7 +11,6 @@ target 'BCApp' do
     inherit! :search_paths
     # Pods for testing
     pod 'Parse'
-    pod 'Parse/UI'
   end
 
   target 'BCAppUITests' do
