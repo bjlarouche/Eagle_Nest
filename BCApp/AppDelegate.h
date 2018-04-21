@@ -1,9 +1,9 @@
 //
 //  AppDelegate.h
-//  BCApp
+//  BCApp for HackTheHeights
 //
-//  Created by Bran Muffin on 4/21/18.
-//  Copyright © 2018 Double Trouble Studio. All rights reserved.
+//  Created on 4/21/18.
+//  Copyright © 2018 Brandon LaRouche, Estevan Felize, and Joseph Squillaro. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

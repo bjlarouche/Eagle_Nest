@@ -1,18 +1,18 @@
 //
-//  ViewController.m
+//  AuthController.m
 //  BCApp for HackTheHeights
 //
 //  Created on 4/21/18.
 //  Copyright © 2018 Brandon LaRouche, Estevan Felize, and Joseph Squillaro. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "AuthController.h"
 
-@interface ViewController ()
+@interface AuthController ()
 
 @end
 
-@implementation ViewController
+@implementation AuthController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

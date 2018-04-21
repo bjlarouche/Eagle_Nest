@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  AuthController.h
 //  BCApp for HackTheHeights
 //
 //  Created on 4/21/18.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface AuthController : UIViewController
 
 
 @end

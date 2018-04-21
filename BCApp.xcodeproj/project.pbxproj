@@ -18,6 +18,7 @@
 		8DFCD27A208B992300FE0019 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFCD279208B992300FE0019 /* main.m */; };
 		8DFCD284208B992300FE0019 /* BCAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFCD283208B992300FE0019 /* BCAppTests.m */; };
 		8DFCD28F208B992300FE0019 /* BCAppUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFCD28E208B992300FE0019 /* BCAppUITests.m */; };
+		8DFCD29E208B9E1000FE0019 /* AuthController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFCD29C208B9E1000FE0019 /* AuthController.m */; };
 		AF41BD2845FD6078D7EE430E /* libPods-BCAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 755906EAC64D5E13C1123790 /* libPods-BCAppTests.a */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,8 @@
 		8DFCD28A208B992300FE0019 /* BCAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BCAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DFCD28E208B992300FE0019 /* BCAppUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BCAppUITests.m; sourceTree = "<group>"; };
 		8DFCD290208B992300FE0019 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8DFCD29C208B9E1000FE0019 /* AuthController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AuthController.m; sourceTree = "<group>"; };
+		8DFCD29D208B9E1000FE0019 /* AuthController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AuthController.h; sourceTree = "<group>"; };
 		925EB86215582FDC50226A94 /* Pods-BCAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BCAppTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BCAppTests/Pods-BCAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		9C3C2E03950634163C5FAA19 /* Pods-BCAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BCAppUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BCAppUITests/Pods-BCAppUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,6 +140,8 @@
 				8DFCD268208B992100FE0019 /* AppDelegate.m */,
 				8DFCD26A208B992100FE0019 /* ViewController.h */,
 				8DFCD26B208B992100FE0019 /* ViewController.m */,
+				8DFCD29D208B9E1000FE0019 /* AuthController.h */,
+				8DFCD29C208B9E1000FE0019 /* AuthController.m */,
 				8DFCD26D208B992100FE0019 /* Main.storyboard */,
 				8DFCD273208B992300FE0019 /* Assets.xcassets */,
 				8DFCD275208B992300FE0019 /* LaunchScreen.storyboard */,
@@ -384,6 +389,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DFCD29E208B9E1000FE0019 /* AuthController.m in Sources */,
 				8DFCD26C208B992100FE0019 /* ViewController.m in Sources */,
 				8DFCD272208B992100FE0019 /* BCApp.xcdatamodeld in Sources */,
 				8DFCD27A208B992300FE0019 /* main.m in Sources */,
@@ -560,7 +566,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6JRJ9AVXW3;
 				INFOPLIST_FILE = BCApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.doubletroublestudio.BCApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -575,7 +584,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6JRJ9AVXW3;
 				INFOPLIST_FILE = BCApp/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.doubletroublestudio.BCApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -590,7 +602,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6JRJ9AVXW3;
 				INFOPLIST_FILE = BCAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.doubletroublestudio.BCAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -606,7 +622,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6JRJ9AVXW3;
 				INFOPLIST_FILE = BCAppTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.doubletroublestudio.BCAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -621,7 +641,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6JRJ9AVXW3;
 				INFOPLIST_FILE = BCAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.doubletroublestudio.BCAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -636,7 +660,11 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6JRJ9AVXW3;
 				INFOPLIST_FILE = BCAppUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.doubletroublestudio.BCAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
