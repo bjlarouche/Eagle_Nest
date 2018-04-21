@@ -111,6 +111,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		1AF43B8F208BA08B00132D4C /* VC Files */ = {
+			isa = PBXGroup;
+			children = (
+				8DFCD26A208B992100FE0019 /* ViewController.h */,
+				8DFCD26B208B992100FE0019 /* ViewController.m */,
+				8DFCD29D208B9E1000FE0019 /* AuthController.h */,
+				8DFCD29C208B9E1000FE0019 /* AuthController.m */,
+			);
+			path = "VC Files";
+			sourceTree = "<group>";
+		};
 		8DFCD25B208B992100FE0019 = {
 			isa = PBXGroup;
 			children = (
@@ -136,12 +147,9 @@
 		8DFCD266208B992100FE0019 /* BCApp */ = {
 			isa = PBXGroup;
 			children = (
+				1AF43B8F208BA08B00132D4C /* VC Files */,
 				8DFCD267208B992100FE0019 /* AppDelegate.h */,
 				8DFCD268208B992100FE0019 /* AppDelegate.m */,
-				8DFCD26A208B992100FE0019 /* ViewController.h */,
-				8DFCD26B208B992100FE0019 /* ViewController.m */,
-				8DFCD29D208B9E1000FE0019 /* AuthController.h */,
-				8DFCD29C208B9E1000FE0019 /* AuthController.m */,
 				8DFCD26D208B992100FE0019 /* Main.storyboard */,
 				8DFCD273208B992300FE0019 /* Assets.xcassets */,
 				8DFCD275208B992300FE0019 /* LaunchScreen.storyboard */,
