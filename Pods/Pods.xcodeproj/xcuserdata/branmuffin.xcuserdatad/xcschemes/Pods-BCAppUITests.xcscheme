@@ -14,11 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-<<<<<<< brandon
                BlueprintIdentifier = "B4172E76485C7F2626DB1C4E0CC94C91"
-=======
-               BlueprintIdentifier = "5BAF1CE3A831876873A94437D2C4865D"
->>>>>>> local
                BuildableName = "Pods_BCAppUITests.framework"
                BlueprintName = "Pods-BCAppUITests"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -49,11 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-<<<<<<< brandon
             BlueprintIdentifier = "B4172E76485C7F2626DB1C4E0CC94C91"
-=======
-            BlueprintIdentifier = "5BAF1CE3A831876873A94437D2C4865D"
->>>>>>> local
             BuildableName = "Pods_BCAppUITests.framework"
             BlueprintName = "Pods-BCAppUITests"
             ReferencedContainer = "container:Pods.xcodeproj">

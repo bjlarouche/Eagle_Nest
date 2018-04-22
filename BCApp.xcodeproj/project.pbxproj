@@ -11,6 +11,27 @@
 		612C86B4571114AF092BC13B /* Pods_BCAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D7538A2DCD6263D07853C97 /* Pods_BCAppUITests.framework */; };
 		8D804AE5208BB8E900126DDE /* SignUpController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D804AE4208BB8E900126DDE /* SignUpController.m */; };
 		8D804AE8208BBE8500126DDE /* VerificationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D804AE6208BBE8500126DDE /* VerificationController.m */; };
+		8DB89ED8208BD17E0019A6D8 /* Rajdhani-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DB89ED3208BD1730019A6D8 /* Rajdhani-Bold.ttf */; };
+		8DB89ED9208BD1810019A6D8 /* Rajdhani-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DB89ED4208BD1730019A6D8 /* Rajdhani-Light.ttf */; };
+		8DB89EDA208BD1810019A6D8 /* Rajdhani-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DB89ED7208BD1730019A6D8 /* Rajdhani-Medium.ttf */; };
+		8DB89EDB208BD1810019A6D8 /* Rajdhani-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DB89ED6208BD1730019A6D8 /* Rajdhani-Regular.ttf */; };
+		8DB89EDC208BD1810019A6D8 /* Rajdhani-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8DB89ED5208BD1730019A6D8 /* Rajdhani-SemiBold.ttf */; };
+		8DB89EDF208BE2580019A6D8 /* LandingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB89EDE208BE2580019A6D8 /* LandingController.m */; };
+		8DB89EE2208C0FCD0019A6D8 /* NewsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB89EE1208C0FCD0019A6D8 /* NewsController.m */; };
+		8DB89EE9208C33570019A6D8 /* MapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB89EE8208C33570019A6D8 /* MapController.m */; };
+		8DB89EEB208C34130019A6D8 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DB89EEA208C34130019A6D8 /* MapKit.framework */; };
+		8DB89EEE208C59ED0019A6D8 /* ProfileController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB89EED208C59ED0019A6D8 /* ProfileController.m */; };
+		8DB89EF1208C5E3C0019A6D8 /* OrganizationsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB89EF0208C5E3C0019A6D8 /* OrganizationsController.m */; };
+		8DB89EF5208C60560019A6D8 /* LoadCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DB89EF2208C60560019A6D8 /* LoadCell.xib */; };
+		8DB89EF6208C60560019A6D8 /* LoadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB89EF3208C60560019A6D8 /* LoadCell.m */; };
+		8DB89EFA208C61000019A6D8 /* AccountCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8DB89EF7208C61000019A6D8 /* AccountCell.xib */; };
+		8DB89EFB208C61000019A6D8 /* AccountCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB89EF9208C61000019A6D8 /* AccountCell.m */; };
+		8DB89F0B208C72530019A6D8 /* MessagesController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB89F09208C72520019A6D8 /* MessagesController.m */; };
+		8DB89F0E208C75660019A6D8 /* MessageModelData.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB89F0D208C75660019A6D8 /* MessageModelData.m */; };
+		8DB89F12208C8B650019A6D8 /* OrgProfileController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB89F11208C8B640019A6D8 /* OrgProfileController.m */; };
+		8DB89F18208C99940019A6D8 /* ChatsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB89F17208C99940019A6D8 /* ChatsController.m */; };
+		8DB89F1B208CA6A90019A6D8 /* AddUsersController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB89F1A208CA6A90019A6D8 /* AddUsersController.m */; };
+		8DB89F1E208CC61B0019A6D8 /* ParentAddUsersController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DB89F1C208CC61A0019A6D8 /* ParentAddUsersController.m */; };
 		8DFCD269208B992100FE0019 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFCD268208B992100FE0019 /* AppDelegate.m */; };
 		8DFCD26C208B992100FE0019 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DFCD26B208B992100FE0019 /* ViewController.m */; };
 		8DFCD26F208B992100FE0019 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DFCD26D208B992100FE0019 /* Main.storyboard */; };
@@ -53,6 +74,42 @@
 		8D804AE6208BBE8500126DDE /* VerificationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerificationController.m; sourceTree = "<group>"; };
 		8D804AE7208BBE8500126DDE /* VerificationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerificationController.h; sourceTree = "<group>"; };
 		8DB89EC4208BCB090019A6D8 /* HelperClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelperClass.h; sourceTree = "<group>"; };
+		8DB89ED3208BD1730019A6D8 /* Rajdhani-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rajdhani-Bold.ttf"; sourceTree = "<group>"; };
+		8DB89ED4208BD1730019A6D8 /* Rajdhani-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rajdhani-Light.ttf"; sourceTree = "<group>"; };
+		8DB89ED5208BD1730019A6D8 /* Rajdhani-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rajdhani-SemiBold.ttf"; sourceTree = "<group>"; };
+		8DB89ED6208BD1730019A6D8 /* Rajdhani-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rajdhani-Regular.ttf"; sourceTree = "<group>"; };
+		8DB89ED7208BD1730019A6D8 /* Rajdhani-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Rajdhani-Medium.ttf"; sourceTree = "<group>"; };
+		8DB89EDD208BE2580019A6D8 /* LandingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LandingController.h; sourceTree = "<group>"; };
+		8DB89EDE208BE2580019A6D8 /* LandingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LandingController.m; sourceTree = "<group>"; };
+		8DB89EE0208C0FCC0019A6D8 /* NewsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsController.h; sourceTree = "<group>"; };
+		8DB89EE1208C0FCD0019A6D8 /* NewsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsController.m; sourceTree = "<group>"; };
+		8DB89EE3208C19C00019A6D8 /* BCApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BCApp.entitlements; sourceTree = "<group>"; };
+		8DB89EE7208C33570019A6D8 /* MapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapController.h; sourceTree = "<group>"; };
+		8DB89EE8208C33570019A6D8 /* MapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapController.m; sourceTree = "<group>"; };
+		8DB89EEA208C34130019A6D8 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8DB89EEC208C59ED0019A6D8 /* ProfileController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileController.h; sourceTree = "<group>"; };
+		8DB89EED208C59ED0019A6D8 /* ProfileController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileController.m; sourceTree = "<group>"; };
+		8DB89EEF208C5E3B0019A6D8 /* OrganizationsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrganizationsController.h; sourceTree = "<group>"; };
+		8DB89EF0208C5E3C0019A6D8 /* OrganizationsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrganizationsController.m; sourceTree = "<group>"; };
+		8DB89EF2208C60560019A6D8 /* LoadCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoadCell.xib; sourceTree = "<group>"; };
+		8DB89EF3208C60560019A6D8 /* LoadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoadCell.m; sourceTree = "<group>"; };
+		8DB89EF4208C60560019A6D8 /* LoadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoadCell.h; sourceTree = "<group>"; };
+		8DB89EF7208C61000019A6D8 /* AccountCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountCell.xib; sourceTree = "<group>"; };
+		8DB89EF8208C61000019A6D8 /* AccountCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountCell.h; sourceTree = "<group>"; };
+		8DB89EF9208C61000019A6D8 /* AccountCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountCell.m; sourceTree = "<group>"; };
+		8DB89F09208C72520019A6D8 /* MessagesController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagesController.m; sourceTree = "<group>"; };
+		8DB89F0A208C72530019A6D8 /* MessagesController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessagesController.h; sourceTree = "<group>"; };
+		8DB89F0C208C75650019A6D8 /* MessageModelData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageModelData.h; sourceTree = "<group>"; };
+		8DB89F0D208C75660019A6D8 /* MessageModelData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageModelData.m; sourceTree = "<group>"; };
+		8DB89F0F208C7F290019A6D8 /* JSQMessagesViewAccessoryButtonDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSQMessagesViewAccessoryButtonDelegate.h; sourceTree = "<group>"; };
+		8DB89F10208C8B640019A6D8 /* OrgProfileController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrgProfileController.h; sourceTree = "<group>"; };
+		8DB89F11208C8B640019A6D8 /* OrgProfileController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrgProfileController.m; sourceTree = "<group>"; };
+		8DB89F16208C99930019A6D8 /* ChatsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatsController.h; sourceTree = "<group>"; };
+		8DB89F17208C99940019A6D8 /* ChatsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatsController.m; sourceTree = "<group>"; };
+		8DB89F19208CA6A90019A6D8 /* AddUsersController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddUsersController.h; sourceTree = "<group>"; };
+		8DB89F1A208CA6A90019A6D8 /* AddUsersController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddUsersController.m; sourceTree = "<group>"; };
+		8DB89F1C208CC61A0019A6D8 /* ParentAddUsersController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParentAddUsersController.m; sourceTree = "<group>"; };
+		8DB89F1D208CC61B0019A6D8 /* ParentAddUsersController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParentAddUsersController.h; sourceTree = "<group>"; };
 		8DFCD264208B992100FE0019 /* BCApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BCApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DFCD267208B992100FE0019 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8DFCD268208B992100FE0019 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -83,6 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DB89EEB208C34130019A6D8 /* MapKit.framework in Frameworks */,
 				C894D447460906418ABA2D5D /* Pods_BCApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,14 +168,43 @@
 			isa = PBXGroup;
 			children = (
 				8DB89EC4208BCB090019A6D8 /* HelperClass.h */,
+				8DFCD26A208B992100FE0019 /* ViewController.h */,
+				8DFCD26B208B992100FE0019 /* ViewController.m */,
+				8DB89EDD208BE2580019A6D8 /* LandingController.h */,
+				8DB89EDE208BE2580019A6D8 /* LandingController.m */,
 				8DFCD29D208B9E1000FE0019 /* AuthController.h */,
 				8DFCD29C208B9E1000FE0019 /* AuthController.m */,
 				8D804AE3208BB8E900126DDE /* SignUpController.h */,
 				8D804AE4208BB8E900126DDE /* SignUpController.m */,
 				8D804AE7208BBE8500126DDE /* VerificationController.h */,
 				8D804AE6208BBE8500126DDE /* VerificationController.m */,
-				8DFCD26A208B992100FE0019 /* ViewController.h */,
-				8DFCD26B208B992100FE0019 /* ViewController.m */,
+				8DB89EE0208C0FCC0019A6D8 /* NewsController.h */,
+				8DB89EE1208C0FCD0019A6D8 /* NewsController.m */,
+				8DB89EE7208C33570019A6D8 /* MapController.h */,
+				8DB89EE8208C33570019A6D8 /* MapController.m */,
+				8DB89EEF208C5E3B0019A6D8 /* OrganizationsController.h */,
+				8DB89EF0208C5E3C0019A6D8 /* OrganizationsController.m */,
+				8DB89EF8208C61000019A6D8 /* AccountCell.h */,
+				8DB89EF9208C61000019A6D8 /* AccountCell.m */,
+				8DB89EF7208C61000019A6D8 /* AccountCell.xib */,
+				8DB89EF4208C60560019A6D8 /* LoadCell.h */,
+				8DB89EF3208C60560019A6D8 /* LoadCell.m */,
+				8DB89EF2208C60560019A6D8 /* LoadCell.xib */,
+				8DB89F10208C8B640019A6D8 /* OrgProfileController.h */,
+				8DB89F11208C8B640019A6D8 /* OrgProfileController.m */,
+				8DB89EEC208C59ED0019A6D8 /* ProfileController.h */,
+				8DB89EED208C59ED0019A6D8 /* ProfileController.m */,
+				8DB89F0A208C72530019A6D8 /* MessagesController.h */,
+				8DB89F09208C72520019A6D8 /* MessagesController.m */,
+				8DB89F0C208C75650019A6D8 /* MessageModelData.h */,
+				8DB89F0D208C75660019A6D8 /* MessageModelData.m */,
+				8DB89F0F208C7F290019A6D8 /* JSQMessagesViewAccessoryButtonDelegate.h */,
+				8DB89F16208C99930019A6D8 /* ChatsController.h */,
+				8DB89F17208C99940019A6D8 /* ChatsController.m */,
+				8DB89F19208CA6A90019A6D8 /* AddUsersController.h */,
+				8DB89F1A208CA6A90019A6D8 /* AddUsersController.m */,
+				8DB89F1D208CC61B0019A6D8 /* ParentAddUsersController.h */,
+				8DB89F1C208CC61A0019A6D8 /* ParentAddUsersController.m */,
 			);
 			path = "VC Files";
 			sourceTree = "<group>";
@@ -125,12 +212,25 @@
 		34EAFF9D220F35C17DC2E148 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8DB89EEA208C34130019A6D8 /* MapKit.framework */,
 				8DFCD29F208BA88100FE0019 /* libParse.a */,
 				884A995BB343CA50DCBC4502 /* Pods_BCApp.framework */,
 				F534673506145503A8B16AA8 /* Pods_BCAppTests.framework */,
 				6D7538A2DCD6263D07853C97 /* Pods_BCAppUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8DB89ED2208BD15D0019A6D8 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8DB89ED3208BD1730019A6D8 /* Rajdhani-Bold.ttf */,
+				8DB89ED4208BD1730019A6D8 /* Rajdhani-Light.ttf */,
+				8DB89ED7208BD1730019A6D8 /* Rajdhani-Medium.ttf */,
+				8DB89ED6208BD1730019A6D8 /* Rajdhani-Regular.ttf */,
+				8DB89ED5208BD1730019A6D8 /* Rajdhani-SemiBold.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 		8DFCD25B208B992100FE0019 = {
@@ -158,6 +258,8 @@
 		8DFCD266208B992100FE0019 /* BCApp */ = {
 			isa = PBXGroup;
 			children = (
+				8DB89EE3208C19C00019A6D8 /* BCApp.entitlements */,
+				8DB89ED2208BD15D0019A6D8 /* fonts */,
 				1AF43B8F208BA08B00132D4C /* VC Files */,
 				8DFCD267208B992100FE0019 /* AppDelegate.h */,
 				8DFCD268208B992100FE0019 /* AppDelegate.m */,
@@ -214,6 +316,7 @@
 				8DFCD261208B992100FE0019 /* Frameworks */,
 				8DFCD262208B992100FE0019 /* Resources */,
 				6DB3B488055ACCAA040F7292 /* [CP] Embed Pods Frameworks */,
+				5CAE8BE6713AE76EE257D28E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -275,6 +378,14 @@
 				TargetAttributes = {
 					8DFCD263208B992100FE0019 = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					8DFCD27E208B992300FE0019 = {
 						CreatedOnToolsVersion = 9.3;
@@ -311,8 +422,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DB89EDB208BD1810019A6D8 /* Rajdhani-Regular.ttf in Resources */,
+				8DB89ED8208BD17E0019A6D8 /* Rajdhani-Bold.ttf in Resources */,
+				8DB89ED9208BD1810019A6D8 /* Rajdhani-Light.ttf in Resources */,
+				8DB89EDA208BD1810019A6D8 /* Rajdhani-Medium.ttf in Resources */,
 				8DFCD277208B992300FE0019 /* LaunchScreen.storyboard in Resources */,
+				8DB89EFA208C61000019A6D8 /* AccountCell.xib in Resources */,
 				8DFCD274208B992300FE0019 /* Assets.xcassets in Resources */,
+				8DB89EF5208C60560019A6D8 /* LoadCell.xib in Resources */,
+				8DB89EDC208BD1810019A6D8 /* Rajdhani-SemiBold.ttf in Resources */,
 				8DFCD26F208B992100FE0019 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,6 +490,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		5CAE8BE6713AE76EE257D28E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BCApp/Pods-BCApp-resources.sh",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterKitResources.bundle",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework/TwitterShareExtensionUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterKitResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TwitterShareExtensionUIResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BCApp/Pods-BCApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		664F0F5F5CED00A8016FA872 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -397,13 +535,27 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-BCApp/Pods-BCApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts-Swift/BoltsSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
-				"${BUILT_PRODUCTS_DIR}/Parse/Parse.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/Parse.default-UI/Parse.framework",
+				"${BUILT_PRODUCTS_DIR}/ParseLiveQuery/ParseLiveQuery.framework",
+				"${BUILT_PRODUCTS_DIR}/Starscream/Starscream.framework",
+				"${PODS_ROOT}/TwitterCore/iOS/TwitterCore.framework",
+				"${PODS_ROOT}/TwitterKit/iOS/TwitterKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BoltsSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Parse.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ParseLiveQuery.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Starscream.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwitterKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -456,12 +608,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				8DFCD29E208B9E1000FE0019 /* AuthController.m in Sources */,
+				8DB89F18208C99940019A6D8 /* ChatsController.m in Sources */,
 				8DFCD26C208B992100FE0019 /* ViewController.m in Sources */,
+				8DB89F0B208C72530019A6D8 /* MessagesController.m in Sources */,
+				8DB89EE9208C33570019A6D8 /* MapController.m in Sources */,
 				8DFCD272208B992100FE0019 /* BCApp.xcdatamodeld in Sources */,
 				8DFCD27A208B992300FE0019 /* main.m in Sources */,
+				8DB89EF1208C5E3C0019A6D8 /* OrganizationsController.m in Sources */,
+				8DB89EE2208C0FCD0019A6D8 /* NewsController.m in Sources */,
+				8DB89F12208C8B650019A6D8 /* OrgProfileController.m in Sources */,
+				8DB89EF6208C60560019A6D8 /* LoadCell.m in Sources */,
+				8DB89EFB208C61000019A6D8 /* AccountCell.m in Sources */,
+				8DB89F0E208C75660019A6D8 /* MessageModelData.m in Sources */,
 				8DFCD269208B992100FE0019 /* AppDelegate.m in Sources */,
 				8D804AE5208BB8E900126DDE /* SignUpController.m in Sources */,
+				8DB89F1B208CA6A90019A6D8 /* AddUsersController.m in Sources */,
 				8D804AE8208BBE8500126DDE /* VerificationController.m in Sources */,
+				8DB89EDF208BE2580019A6D8 /* LandingController.m in Sources */,
+				8DB89F1E208CC61B0019A6D8 /* ParentAddUsersController.m in Sources */,
+				8DB89EEE208C59ED0019A6D8 /* ProfileController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -632,17 +797,20 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BEEF8A1EE3B0C75FB04A96B6 /* Pods-BCApp.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BCApp/BCApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6JRJ9AVXW3;
+				DEVELOPMENT_TEAM = KC3PTTS8KN;
 				INFOPLIST_FILE = BCApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.doubletroublestudio.BCApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thingtwo.BCApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -651,17 +819,20 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 485430218D7BF4FAEB0D0DE7 /* Pods-BCApp.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BCApp/BCApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6JRJ9AVXW3;
+				DEVELOPMENT_TEAM = KC3PTTS8KN;
 				INFOPLIST_FILE = BCApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.doubletroublestudio.BCApp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.thingtwo.BCApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -681,6 +852,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.doubletroublestudio.BCAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BCApp.app/BCApp";
 			};
@@ -701,6 +873,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.doubletroublestudio.BCAppTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BCApp.app/BCApp";
 			};
@@ -720,6 +893,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.doubletroublestudio.BCAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = BCApp;
 			};
@@ -739,6 +913,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.doubletroublestudio.BCAppUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = BCApp;
 			};

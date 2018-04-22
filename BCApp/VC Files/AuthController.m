@@ -17,8 +17,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    tap.cancelsTouchesInView = YES;
+    [self.view addGestureRecognizer:tap];
+    
+    UISwipeGestureRecognizer *swipeDown = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    [swipeDown setDirection: UISwipeGestureRecognizerDirectionDown];
+    swipeDown.cancelsTouchesInView = NO;
+    [self.view addGestureRecognizer:swipeDown];
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -37,6 +45,40 @@
     [alert addAction:dismissaction];
 }
 
+#pragma mark Keyboard
+
+// Dismiss the keyboard
+-(void)dismissKeyboard {
+    [self.view endEditing:YES];
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField {
+    if (textField == _usernameField) {
+        [_passwordField becomeFirstResponder];
+    }
+    else if (textField == _passwordField) {
+        [self loginPressed:self];
+    }
+    else
+        [textField resignFirstResponder];
+    return YES;
+}
+
+#pragma mark Installation
+
+// Link PFUser to Installation object for current device
+-(void)linkUserToInstallation {
+    PFUser *currentUser = [[PFUser currentUser] fetch];
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    
+    [currentInstallation setObject:currentUser.objectId forKey:@"userObjectId"];
+    
+    [currentInstallation saveInBackgroundWithBlock:^(BOOL succeeded, NSError * error) {
+        if (succeeded)
+            [self performSegueWithIdentifier:@"authenticated" sender:self];
+    }];
+}
+
 #pragma mark Parse Login
 
 -(void)processLogin:(NSString *)username withPassword:(NSString *)password {
@@ -47,34 +89,33 @@
                                             // Checking out if the email has been verified
                                             if([[user objectForKey:@"emailVerified"] boolValue]) {
                                                 // Email has been verified
-                                                // Segue to main part of app
+                                                [self linkUserToInstallation]; // Link currentUser to Installation
                                             }
                                             else {
                                                 // Email has not been verified, logout the user
-                                                // [PFUser logOut];
                                                 // Segue to VerificationController
-                                                
+                                                [self performSegueWithIdentifier:@"verify" sender:nil];
                                             }
                                         } else {
                                             NSString* errorString = [error userInfo][@"error"];
                                             // An error occurred
+                                            
+                                            [self showAlert:@"Unable to Login" message:@"Please try again." actionTitle:@"OKAY"];
                                         }
                                     }];
 }
 
 // Trigger Login Sequence
 -(IBAction)loginPressed:(id)sender {
-    NSString* username = @"USERNAMEHERE";
-    NSString* password = @"PASSWORDHERE";
-    
-    [self processLogin:username withPassword:password];
+    [self processLogin:_usernameField.text withPassword:_passwordField.text];
 }
 
 #pragma mark Parse SignUp
 
 // Push to SignUpController
 -(IBAction)signUpPressed:(id)sender {
-   // Segue navigation to SignUpController
+    // Segue navigation to SignUpController
+    [self performSegueWithIdentifier:@"signup" sender:nil];
 }
 
 @end

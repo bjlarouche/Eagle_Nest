@@ -10,8 +10,10 @@
 
 @import Parse;
 
-@interface AuthController : UIViewController
+@interface AuthController : UIViewController <UITextFieldDelegate>
 
+@property (nonatomic, retain) IBOutlet UITextField *usernameField;
+@property (nonatomic, retain) IBOutlet UITextField *passwordField;
 
 @end
 

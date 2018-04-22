@@ -10,6 +10,7 @@
 #import <CoreData/CoreData.h>
 
 @import Parse;
+@import TwitterKit;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

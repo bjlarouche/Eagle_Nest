@@ -21,6 +21,8 @@
 #pragma mark UIApplicationDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [[Twitter sharedInstance] startWithConsumerKey:@"OpyDaD5nI7p9pz60Au7ngEXbw" consumerSecret:@"gahDNbAaUVoNjab6wTzLxFlJkTTBLCcdTcWg3Pkj8ttI886m7I"];
+    
     // Enable storing and querying data from Local Datastore. Remove this line if you don't want to
     // use Local Datastore features or want to use cachePolicy.
     [Parse enableLocalDatastore];
@@ -89,7 +91,8 @@
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
     PFInstallation *currentInstallation = [PFInstallation currentInstallation];
     [currentInstallation setDeviceTokenFromData:deviceToken];
-    [currentInstallation saveInBackground];
+    [currentInstallation saveInBackgroundWithBlock:^(BOOL succeeded, NSError * error) {
+    }];
     
     [PFPush subscribeToChannelInBackground:@"" block:^(BOOL succeeded, NSError *error) {
         if (succeeded) {

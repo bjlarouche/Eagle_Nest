@@ -12,6 +12,7 @@
 
 @interface VerificationController : UIViewController
 
+@property (nonatomic, retain) IBOutlet UIActivityIndicatorView *activityIndicator;
 
 @end
 

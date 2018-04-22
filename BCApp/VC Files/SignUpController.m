@@ -20,6 +20,15 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    tap.cancelsTouchesInView = YES;
+    [self.view addGestureRecognizer:tap];
+    
+    UISwipeGestureRecognizer *swipeDown = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
+    [swipeDown setDirection: UISwipeGestureRecognizerDirectionDown];
+    swipeDown.cancelsTouchesInView = NO;
+    [self.view addGestureRecognizer:swipeDown];
 }
 
 
@@ -40,10 +49,38 @@
     [alert addAction:dismissaction];
 }
 
+#pragma mark Keyboard
+
+// Dismiss the keyboard
+-(void)dismissKeyboard {
+    [self.view endEditing:YES];
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField {
+    if (textField == _firstnameField) {
+        [_lastnameField becomeFirstResponder];
+    }
+    else if (textField == _lastnameField) {
+        [_emailField becomeFirstResponder];
+    }
+    else if (textField == _emailField) {
+        [_usernameField becomeFirstResponder];
+    }
+    else if (textField == _usernameField) {
+        [_passwordField becomeFirstResponder];
+    }
+    else if (textField == _passwordField) {
+        [self signUpPressed:self];
+    }
+    else
+        [textField resignFirstResponder];
+    return YES;
+}
+
 #pragma mark Parse SignUp
 
 // Sign user up with Parse with given username, password, and email
--(void)processSignUp:(NSString *)username withPassword:(NSString *)password withEmail:(NSString *)email {
+-(void)processSignUp:(NSString *)username withPassword:(NSString *)password withEmail:(NSString *)email withFirstname:(NSString *)firstname withLastname:(NSString *)lastname {
     // Declare a new PFUser
     PFUser *user = [PFUser user];
 
@@ -51,16 +88,23 @@
     user.username = username;
     user.password = password;
     user.email = email; // Populating this field will trigger verification email to be sent
+    [user setObject:firstname forKey:@"firstname"];
+    [user setObject:lastname forKey:@"lastname"];
+    
+    NSData *imageData = UIImagePNGRepresentation([UIImage imageNamed:@"PlaceholderProfileImage.jpg"]);
+    PFFile *file = [PFFile fileWithData:imageData];
+    [user setObject:file forKey:@"profileImage"];
     
     // Register PFUser with Parse in background
-    [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+    [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if(!error) {
             // In case everything went fine
             // Segue to VerificationController
+            [self performSegueWithIdentifier:@"verify" sender:nil];
         }
         else {
             NSString* errorString = [error userInfo][@"error"];
-            // In case something went wrong
+            [self showAlert:@"Account Setup Failed" message:@"Please try again." actionTitle:@"OKAY"];
         }
     }];
 }
@@ -68,15 +112,17 @@
 // Trigger SignUp sequence
 -(IBAction)signUpPressed:(id)sender {
     // Gather the relevant info
-    NSString *username = @"USERNAME_HERE";
-    NSString *password = @"PASSWORD_HERE";
-    NSString *email = @"EMAIL_HERE";
+    NSString *username = _usernameField.text;
+    NSString *password = _passwordField.text;
+    NSString *email = _emailField.text;
+    NSString *firstname = _firstnameField.text;
+    NSString *lastname = _lastnameField.text;
     
     if([email isValidEmail]) {
         NSArray *emailComponents = [email componentsSeparatedByString:@"@"];
         if ([emailComponents[1] isEqualToString:@"bc.edu"]) {
             // Proccess SignUp with valid BC Username
-            [self processSignUp:username withPassword:password withEmail:email];
+            [self processSignUp:username withPassword:password withEmail:email withFirstname:firstname withLastname:lastname];
             return;
         }
     }
