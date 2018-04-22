@@ -159,7 +159,7 @@
             <objects>
                 <viewController title="Sign In Screen" id="i8o-Fh-ADt" customClass="AuthController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yaa-t2-gyX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bm2-ho-q28">
@@ -354,7 +354,7 @@
             <objects>
                 <viewController title="New Account Setup" id="Whr-u8-1pF" customClass="SignUpController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WXi-o3-5BJ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="724"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lGB-RH-2cC">
@@ -800,7 +800,11 @@
                         <viewLayoutGuide key="safeArea" id="Qff-HG-bNz"/>
                     </view>
                     <navigationItem key="navigationItem" title="My Profile" id="34V-q0-bR2">
-                        <barButtonItem key="leftBarButtonItem" title="Sign Out" id="gQI-N5-m2V"/>
+                        <barButtonItem key="leftBarButtonItem" title="signOut" id="gQI-N5-m2V">
+                            <connections>
+                                <segue destination="Of6-TT-z4X" kind="presentation" id="oZZ-43-H1i"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="fullnameLabel" destination="6uw-q9-eYc" id="FZX-1b-wXg"/>
@@ -969,7 +973,7 @@
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" searchBarStyle="minimal" text="" placeholder="Search Clubs &amp; Orgs" showsCancelButton="YES" translucent="NO" id="YGr-DC-QZJ">
+                        <searchBar key="tableHeaderView" contentMode="redraw" misplaced="YES" searchBarStyle="minimal" text="" placeholder="Search Clubs &amp; Orgs" showsCancelButton="YES" translucent="NO" id="YGr-DC-QZJ">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1022,7 +1026,7 @@
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" searchBarStyle="minimal" text="" placeholder="Search Chats" showsCancelButton="YES" translucent="NO" id="hhm-Ne-jaq">
+                        <searchBar key="tableHeaderView" contentMode="redraw" misplaced="YES" searchBarStyle="minimal" text="" placeholder="Search Chats" showsCancelButton="YES" translucent="NO" id="hhm-Ne-jaq">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1255,7 +1259,7 @@
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" searchBarStyle="minimal" text="" placeholder="Find Users" showsCancelButton="YES" translucent="NO" id="xai-La-BKw">
+                        <searchBar key="tableHeaderView" contentMode="redraw" misplaced="YES" searchBarStyle="minimal" text="" placeholder="Find Users" showsCancelButton="YES" translucent="NO" id="xai-La-BKw">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -9466,6 +9470,6 @@ c+AAAAAAAAAEAQAAAAAAAABWAAAAAAAAAAAAAAAAAAdz4g
     <inferredMetricsTieBreakers>
         <segue reference="Zo4-MO-Uwi"/>
         <segue reference="Seu-rD-s6G"/>
-        <segue reference="psC-iD-OII"/>
+        <segue reference="wL0-IQ-ZUM"/>
     </inferredMetricsTieBreakers>
 </document>
