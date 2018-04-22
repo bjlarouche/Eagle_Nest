@@ -134,14 +134,13 @@
         
          JSQMessagesAvatarImage *avatarImage = [[JSQMessagesAvatarImage alloc] initWithAvatarImage:avatar highlightedImage:highlightedAvatar placeholderImage:avatar];
         
-        [_messageData.avatars setObject:avatarImage forKey:currentUser.objectId];
-        [_messageData.users setObject:user[@"username"] forKey:currentUser.objectId];
-    }
-    
-    NSLog(@"COUNT: %lu", [_messageData.users count]);
-        for(NSString *key in [_messageData.users allKeys]) {
-            NSLog(@"%@",[_messageData.users objectForKey:key]);
+        if ([user[@"username"] isEqualToString:currentUser[@"username"]]) {
+            [_messageData.avatars setObject:avatarImage forKey:currentUser.objectId];
+            [_messageData.users setObject:user[@"username"] forKey:currentUser.objectId];
+            _messageData.avatars = @{currentUser.objectId : avatarImage};
+            _messageData.users = @{currentUser.objectId : user[@"username"]};
         }
+    }
 //    JSQMessagesAvatarImageFactory *userAvatar = [[JSQMessagesAvatarImageFactory alloc] ];
 //    
 //    self.avatars = @{ kJSQDemoAvatarIdSquires : jsqImage,
