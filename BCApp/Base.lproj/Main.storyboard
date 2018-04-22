@@ -800,7 +800,7 @@
                         <viewLayoutGuide key="safeArea" id="Qff-HG-bNz"/>
                     </view>
                     <navigationItem key="navigationItem" title="My Profile" id="34V-q0-bR2">
-                        <barButtonItem key="leftBarButtonItem" title="signOut" id="gQI-N5-m2V">
+                        <barButtonItem key="leftBarButtonItem" title="Sign Out" id="gQI-N5-m2V">
                             <connections>
                                 <segue destination="Of6-TT-z4X" kind="presentation" id="oZZ-43-H1i"/>
                             </connections>
@@ -973,7 +973,7 @@
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" misplaced="YES" searchBarStyle="minimal" text="" placeholder="Search Clubs &amp; Orgs" showsCancelButton="YES" translucent="NO" id="YGr-DC-QZJ">
+                        <searchBar key="tableHeaderView" contentMode="redraw" searchBarStyle="minimal" text="" placeholder="Search Clubs &amp; Orgs" showsCancelButton="YES" translucent="NO" id="YGr-DC-QZJ">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1026,7 +1026,7 @@
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" misplaced="YES" searchBarStyle="minimal" text="" placeholder="Search Chats" showsCancelButton="YES" translucent="NO" id="hhm-Ne-jaq">
+                        <searchBar key="tableHeaderView" contentMode="redraw" searchBarStyle="minimal" text="" placeholder="Search Chats" showsCancelButton="YES" translucent="NO" id="hhm-Ne-jaq">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1075,14 +1075,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iw9-iQ-suP">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Iw9-iQ-suP">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="273"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="org-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="qqd-Jr-qiu" customClass="PFImageView">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="org-placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="qqd-Jr-qiu" customClass="PFImageView">
                                         <rect key="frame" x="117" y="7" width="140" height="140"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="140" id="K8m-LN-Eu8"/>
-                                        </constraints>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                 <integer key="value" value="70"/>
@@ -1093,35 +1092,27 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tak-k4-QW4">
-                                        <rect key="frame" x="8" y="155" width="359" height="29"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="29" id="Tw0-ox-Frb"/>
-                                        </constraints>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tak-k4-QW4">
+                                        <rect key="frame" x="8" y="153" width="359" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Rajdhani-SemiBold" family="Rajdhani" pointSize="22"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="users-icon" translatesAutoresizingMaskIntoConstraints="NO" id="Jjo-ey-Bkj">
-                                        <rect key="frame" x="129" y="186" width="30" height="30"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="30" id="Yf7-gk-lwu"/>
-                                        </constraints>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="users-icon" translatesAutoresizingMaskIntoConstraints="NO" id="Jjo-ey-Bkj">
+                                        <rect key="frame" x="129" y="184" width="30" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jpz-LW-o15">
-                                        <rect key="frame" x="164" y="191" width="93" height="23"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="93" id="TNb-dg-b2g"/>
-                                        </constraints>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=" " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jpz-LW-o15">
+                                        <rect key="frame" x="164" y="189" width="93" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Rajdhani-Medium" family="Rajdhani" pointSize="18"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUx-A3-hgM">
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KUx-A3-hgM">
                                         <rect key="frame" x="125" y="220" width="124" height="35"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="35" id="Uql-0a-bGs"/>
-                                        </constraints>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="Rajdhani-SemiBold" family="Rajdhani" pointSize="18"/>
                                         <state key="normal" title="+ Join Chatroom"/>
                                         <connections>
@@ -1131,28 +1122,11 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.79607843140000001" green="0.1764705882" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstItem="qqd-Jr-qiu" firstAttribute="trailing" secondItem="Jpz-LW-o15" secondAttribute="trailing" id="03r-jB-dMN"/>
-                                    <constraint firstItem="Tak-k4-QW4" firstAttribute="top" secondItem="qqd-Jr-qiu" secondAttribute="bottom" constant="8" symbolic="YES" id="0q2-G3-Mmg"/>
-                                    <constraint firstAttribute="bottom" secondItem="KUx-A3-hgM" secondAttribute="bottom" constant="18" id="CVJ-d2-v7r"/>
-                                    <constraint firstItem="Tak-k4-QW4" firstAttribute="trailing" secondItem="Iw9-iQ-suP" secondAttribute="trailingMargin" id="GLC-Ju-nup"/>
-                                    <constraint firstItem="Jpz-LW-o15" firstAttribute="top" secondItem="Tak-k4-QW4" secondAttribute="bottom" constant="7" id="L5m-tM-Oav"/>
-                                    <constraint firstItem="Tak-k4-QW4" firstAttribute="leading" secondItem="Iw9-iQ-suP" secondAttribute="leadingMargin" id="LFO-jj-uC9"/>
-                                    <constraint firstItem="KUx-A3-hgM" firstAttribute="top" secondItem="Jjo-ey-Bkj" secondAttribute="bottom" constant="4" id="LR5-Jd-qqr"/>
-                                    <constraint firstItem="Jpz-LW-o15" firstAttribute="leading" secondItem="Jjo-ey-Bkj" secondAttribute="trailing" constant="5" id="O20-kd-VJ6"/>
-                                    <constraint firstItem="qqd-Jr-qiu" firstAttribute="top" secondItem="Iw9-iQ-suP" secondAttribute="top" constant="7" id="b3O-MQ-EIO"/>
-                                    <constraint firstItem="Jjo-ey-Bkj" firstAttribute="top" secondItem="Tak-k4-QW4" secondAttribute="bottom" constant="2" id="rC3-ki-0Nk"/>
-                                    <constraint firstItem="Tak-k4-QW4" firstAttribute="centerX" secondItem="KUx-A3-hgM" secondAttribute="centerX" id="w91-vn-qfl"/>
-                                    <constraint firstItem="qqd-Jr-qiu" firstAttribute="centerX" secondItem="Tak-k4-QW4" secondAttribute="centerX" id="xMu-8L-joW"/>
-                                    <constraint firstItem="KUx-A3-hgM" firstAttribute="top" secondItem="Jpz-LW-o15" secondAttribute="bottom" constant="6" id="y9Y-rf-Wqw"/>
-                                </constraints>
                             </view>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ir-KI-9PF">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ir-KI-9PF">
                                 <rect key="frame" x="16" y="297" width="343" height="326"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="326" id="2KW-xP-8Cq"/>
-                                </constraints>
                                 <fontDescription key="fontDescription" name="Rajdhani-Regular" family="Rajdhani" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                 <userDefinedRuntimeAttributes>
@@ -1164,15 +1138,6 @@
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="Iw9-iQ-suP" firstAttribute="leading" secondItem="42v-LV-dyn" secondAttribute="leading" id="BV9-eU-ecs"/>
-                            <constraint firstItem="Iw9-iQ-suP" firstAttribute="top" secondItem="42v-LV-dyn" secondAttribute="top" id="ICD-Ta-gXT"/>
-                            <constraint firstAttribute="trailing" secondItem="Iw9-iQ-suP" secondAttribute="trailing" id="KAh-bS-0V7"/>
-                            <constraint firstItem="0Ir-KI-9PF" firstAttribute="leading" secondItem="42v-LV-dyn" secondAttribute="leadingMargin" id="Nkx-vu-wle"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="0Ir-KI-9PF" secondAttribute="bottom" constant="-16" id="WM7-RB-o11"/>
-                            <constraint firstItem="0Ir-KI-9PF" firstAttribute="top" secondItem="Iw9-iQ-suP" secondAttribute="bottom" constant="24" id="muD-Il-6B8"/>
-                            <constraint firstItem="Iw9-iQ-suP" firstAttribute="centerX" secondItem="0Ir-KI-9PF" secondAttribute="centerX" id="tEY-T8-HQy"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="SI2-gd-48G"/>
                     </view>
                     <connections>
@@ -1259,7 +1224,7 @@
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="separatorColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="sectionIndexBackgroundColor" red="0.91764705879999997" green="0.91764705879999997" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <searchBar key="tableHeaderView" contentMode="redraw" misplaced="YES" searchBarStyle="minimal" text="" placeholder="Find Users" showsCancelButton="YES" translucent="NO" id="xai-La-BKw">
+                        <searchBar key="tableHeaderView" contentMode="redraw" searchBarStyle="minimal" text="" placeholder="Find Users" showsCancelButton="YES" translucent="NO" id="xai-La-BKw">
                             <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
